@@ -1,0 +1,208 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #071a12, #0b2e1c);
+    color: #eafff2;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at top, #0f3d26, #050d09);
+}
+
+header h1 {
+    font-size: 55px;
+    background: linear-gradient(90deg, #00ff88, #00c853);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 20px;
+    color: #b9ffd6;
+    margin-top: 10px;
+}
+
+/* NAVBAR */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+nav a {
+    color: #d9ffe9;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* underline animation */
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #00ff88;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ff88;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* TITLES */
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0,255,136,0.3);
+}
+
+/* ABOUT */
+#about p {
+    max-width: 650px;
+    margin: auto;
+    color: #c7ffe0;
+    line-height: 1.7;
+}
+
+/* SKILLS (GLASS CARDS) */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li {
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0,255,136,0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    background: linear-gradient(90deg, #00ff88, #00c853);
+    color: #04130b;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff88;
+}
+
+/* PROJECTS */
+#projects ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects li {
+    margin: 15px;
+}
+
+/* PROJECT CARDS */
+#projects a {
+    display: block;
+    width: 260px;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #dfffe9;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0,255,136,0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+/* HOVER GLOW */
+#projects a:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: linear-gradient(135deg, #00ff88, #00c853);
+    color: #04130b;
+    box-shadow: 0 0 25px #00ff88;
+}
+
+/* CONTACT */
+form {
+    max-width: 420px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0,255,136,0.2);
+    background: rgba(0,0,0,0.4);
+    color: #eafff2;
+    outline: none;
+}
+
+/* FOCUS EFFECT */
+form input:focus,
+form textarea:focus {
+    border-color: #00ff88;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+/* BUTTON */
+form input[type="submit"] {
+    background: linear-gradient(90deg, #00ff88, #00c853);
+    color: #04130b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ff88;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7fffc0;
+    border-top: 1px solid rgba(0,255,136,0.2);
+}
