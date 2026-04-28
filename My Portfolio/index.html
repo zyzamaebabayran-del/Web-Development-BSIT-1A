@@ -3,48 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>My Portfolio</title>
 </head>
 <body>
 
-    <!-- Header -->
-     <header>
-        <h1>Zyza Mae Babayran</h1>
-        <p>I am student in CPC taking Bachelor of Science in Information Technology</p>
-     </header>
+    <!-- Navigation with Logo -->
+    <nav>
+        <h2 class="logo">ZYZAMAEPORT</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <!-- Navigation -->
-     <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-     </nav>
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Zyza Mae Babayran</h1>
+            <p class="tagline">
+                I'm a Web Developer crafting simple, intuitive, and impactful websites.
+            </p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="/profile.jpg" alt="Zyza Mae Babayran" class="profile-photo" width="300" height="300">
+        </div>
+    </section>
 
     <!-- About -->
-     <section id="about">
+    <section id="about">
         <h2>About Me</h2>
         <p>
-            I'm an IT student dedicated to turning complex logic into user-friendly web system.
+            I'm an IT student dedicated to turning complex logic into user-friendly web systems.
             I live for the "aha!" moment when a difficult bug finally turns into a working feature.
         </p>
-     </section>
+    </section>
 
     <!-- Skills -->
-     <section id="skills">
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Master in HTML5</li>
-            <li>Master in CSS</li>
-            <li>Master in Javascript</li>
-            <li>Master in Ruby on Rails</li>
-            <li>Master in All Programming Language</li>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Ruby on Rails</li>
+            <li>Basic Programming Concepts</li>
         </ul>
-     </section>
+    </section>
 
-    <!-- Project -->
-     <section id="projects">
+    <!-- Projects -->
+    <section id="projects">
         <h2>This is my Projects</h2>
 
         <ul>
@@ -66,24 +78,24 @@
                 </a>
             </li>
         </ul>     
-     </section>
+    </section>
 
-     <!-- Contact -->
-      <section id="contact">
+    <!-- Contact -->
+    <section id="contact">
         <h2>Contact Me:</h2>
 
         <form>
             <input type="text" placeholder="Your Name" required>
-            <input type="text" placeholder="Your Email" required>
+            <input type="email" placeholder="Your Email" required>
             <textarea rows="5" placeholder="Your Message"></textarea>
-            <input type="Submit" value="Send Message">
+            <input type="submit" value="Send Message">
         </form>
-      </section>
+    </section>
 
     <!-- Footer -->
-     <footer>
+    <footer>
         <p>@ My Portfolio | All Rights Reserved</p>
-     </footer>
+    </footer>
 
 </body>
 </html>
